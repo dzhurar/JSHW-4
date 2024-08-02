@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1 -->
+    <form>
+        <label for="drink">виберіть напій</label>
+        <select id="drink" name="drink">
+            <option value="coffee">Кава</option>
+            <option value="tea">Чай</option>
+            <option value="juice">Сік</option>
+        </select>
+    </form>
+    <div id="message"></div>
+
+
+    <!-- 2 -->
+    <form id="dayForm">
+        <label for="dayInput">Введіть день тижня:</label>
+        <input type="text" id="dayInput" name="dayInput">
+        <button type="button" onclick="checkDay()">Перевірити</button>
+    </form>
+    <div id="messageTwo"></div>
+
+
+    <!-- 3 -->
+    <form id="seasonForm">
+        <label for="monthNumber">Введіть номер місяця (1-12):</label>
+        <input type="number" id="monthNumber" name="monthNumber" min="1" max="12">
+        <button type="button" onclick="determineSeason()">Перевірити</button>
+    </form>
+    <div id="seasonMessage"></div>
+    
+
+    <!-- 4 -->
+    <form id="daysForm">
+        <label for="monthInput">Введіть номер місяця (1-12):</label>
+        <input type="number" id="monthInput" name="monthInput" min="1" max="12">
+        <button type="button" onclick="getDaysInMonth()">Перевірити</button>
+    </form>
+    <div id="daysMessage"></div>
+
+
+    <!-- 5 -->
+    <form id="colorForm">
+        <label for="colorInput">Введіть назву кольору:</label>
+        <input type="text" id="colorInput" name="colorInput">
+        <button type="button" onclick="determineAction()">Перевірити</button>
+    </form>
+    <div id="colorMessage"></div>
+
+
+    <!-- 6 -->
+    <form id="calcForm">
+        <label for="firstNumber">Перше число:</label>
+        <input type="number" id="firstNumber" name="firstNumber">
+        
+        <label for="secondNumber">Друге число:</label>
+        <input type="number" id="secondNumber" name="secondNumber">
+        
+        <label for="operation">Операція:</label>
+        <select id="operation" name="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        
+        <button type="button" onclick="calculateResult()">Обчислити</button>
+    </form>
+    <div id="resultMessage"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
